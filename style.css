@@ -1,0 +1,243 @@
+
+/*{
+  border: 1px dotted;
+}
+*/
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./image/piano-tiny.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+nav ul li > a {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+#button--to--projects {
+  opacity: 85%;
+}
+
+div#progress--button {
+  position: relative;
+  top: 40vh;
+  bottom: 10vh;
+
+  /*
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    -moz-transform: translateY(-200%);
+    -o-transform: translateY(-200%);
+    -ms-transform: translateY(-200%);
+    /* left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    */
+}
+
+/*
+div#progress--button {
+    position: relative;
+    bottom: -20rem;
+}
+@media only screen and (min-width: 992px) {
+    div#progress--button {
+        position: relative;
+        bottom: -30rem;
+    }
+}
+@media only screen and (min-height: 600px) {
+    div#progress--button {
+        position: relative;
+        top: 35vh;
+    }
+}
+*/
+
+h1,
+h4,
+h3,
+h5 {
+  padding: 5px;
+}
+
+.hide-on-med-and-up {
+  padding: 2px;
+}
+
+div.divider {
+  margin-bottom: 4vw;
+  margin-top: 4vw;
+}
+section.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+img {
+  border: 1px solid black;
+}
+
+#headshot--img {
+  margin: 0 !important;
+  border-radius: 50%;
+}
+
+a.code--links:active {
+  position: relative;
+  top: 1px;
+}
+
+.collection .collection-item.avatar i.circle {
+  font-size: 32px;
+}
+
+ul.collection.skills {
+  border: none;
+}
+
+ul.collection.skills > li {
+  margin-bottom: 4rem;
+}
+
+li.collection-item.skills-item.avatar {
+  border: none;
+  border-bottom: none !important;
+}
+
+ul.collection {
+  border: none;
+}
+
+#headshot-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#headshot--img {
+  display: block;
+  width: auto;
+  max-height: 100%;
+  border: none;
+}
+
+div.circular--landscape {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+p.flow-text.center {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#contact {
+  margin-top: 4vw;
+}
+
+#contact--links {
+  position: relative;
+  bottom: 3.75rem;
+  left: 3rem;
+}
+
+li.collection-item.blue-grey.avatar.hide-on-med-and-down {
+  border-bottom: none;
+  max-height: 40px;
+}
+
+li.collection-item.blue-grey.avatar.hide-on-med-and-down:hover {
+  position: relative;
+  top: 40px;
+}
+li.collection-item.blue-grey.avatar.hide-on-med-and-down:active {
+  position: relative;
+  top: 1px;
+}
+
+li.collection-item.blue-grey.avatar.hide-on-med-and-down > a {
+  outline: none;
+}
+li.collection-item.blue-grey.avatar.hide-on-large-only > a {
+  outline: none;
+}
+
+li.collection-item.blue-grey.avatar.hide-on-large-only {
+  border-bottom: none;
+  max-height: 40px;
+  /* margin-left: 3.0vw; */
+}
+
+li.collection-item.blue-grey.avatar.hide-on-large-only:hover {
+  position: relative;
+  top: 3px;
+}
+li.collection-item.blue-grey.avatar.hide-on-large-only:active {
+  position: relative;
+  top: 1px;
+}
+
+li.collection-item.blue-grey.avatar.hide-on-med-and-down > a {
+  outline: none;
+}
+
+/***   This changes the materialize CSS form color to white ***/
+.input-field .prefix ~ input,
+.input-field .prefix ~ textarea,
+.input-field .prefix ~ label,
+.input-field .prefix ~ .validate ~ label,
+.input-field .prefix ~ .helper-text,
+.input-field .prefix ~ .autocomplete-content {
+  color: white;
+}
+
+i.material-icons.prefix {
+  color: #eceff1 !important;
+}
+
+/*** This changes the materialize CSS form color to black while active ***/
+
+input[type='text']:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #263238;
+  box-shadow: 0 1px 0 0 #263238;
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]) + label {
+  color: #263238;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #263238;
+  box-shadow: 0 1px 0 0 #263238;
+}
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #263238;
+}
+/*** FADE IN ANIMATION FOR HEADER TEXT ***/
+
+.first-fade {
+  animation: bounce;
+}
